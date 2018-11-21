@@ -27,7 +27,6 @@
 		"-std=gnu++17"
 	],
 	"c_cpp_flags": [
-		"-mcmodel=medany",
 		"-fno-common",
 		"-ffunction-sections",
 		"-fdata-sections",
@@ -54,13 +53,11 @@
 		"-Wno-missing-field-initializers"
 	],
 	"link_flags": [
-		"-nostartfiles",
 		"-static",
-		"-Wl,--gc-sections",
 		"-Wl,-static",
-		"-Wl,-EL",
-		"-T \"X:/test/gpio_led/kendryte_libraries/kendryte-sdk/lds/kendryte.ld\""
+		"-Wl,-EL"
 	],
+	"ld_file": "lds/kendryte.ld",
 	"properties": {
 		"LINKER_LANGUAGE": "C"
 	}
